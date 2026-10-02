@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+﻿import { useState, useEffect, useRef } from "react";
 
 type View = "home" | "catalogo" | "negociacion" | "pagos" | "seguimiento";
 type UserRole = "comprador" | "productor";
@@ -30,12 +30,20 @@ const NOTIFS_COMPRADOR: Notif[] = [
   { id: "nc2", title: "Propuesta aceptada", body: "El productor Hacienda Los Cedros aceptó tu propuesta de $36.000/canastilla.", time: "Hace 22 min", read: false, type: "mensaje" },
   { id: "nc3", title: "Pago en custodia confirmado", body: "Tu pago de $3.200.000 COP está retenido de forma segura 🔒.", time: "Hace 1h", read: true, type: "pago" },
   { id: "nc4", title: "Pedido en camino", body: "Agrícola Nariño marcó tu pedido como despachado. Entrega estimada: 18 Sep.", time: "Hace 2h", read: true, type: "compra" },
+    { id: "nc5", title: "Pedido preparado", body: "Tu pedido fue preparado por el productor y esta listo para despacho.", time: "Hace 1h", read: false, type: "compra" },
+    { id: "nc6", title: "Pedido en transito", body: "Tu pedido salio del punto de origen y se encuentra en transito.", time: "Hace 45 min", read: false, type: "compra" },
+    { id: "nc7", title: "Pedido proximo a entrega", body: "Tu pedido se encuentra proximo a llegar al punto de entrega.", time: "Hace 20 min", read: false, type: "compra" },
+    { id: "nc8", title: "Pedido entregado", body: "El pedido fue registrado como entregado. Confirma la recepcion para continuar.", time: "Ahora", read: false, type: "compra" },
 ];
 const NOTIFS_PRODUCTOR: Notif[] = [
   { id: "np1", title: "Nueva propuesta recibida", body: "Un comprador propone $38.000/canastilla por 80 unidades de Hartón Verde.", time: "Hace 8 min", read: false, type: "mensaje" },
   { id: "np2", title: "Oferta publicada", body: "Tu oferta de 200 canastillas de Cavendish ya está visible en el catálogo.", time: "Hace 30 min", read: false, type: "oferta" },
   { id: "np3", title: "Pago liberado ✓", body: "El comprador confirmó la entrega. $3.200.000 COP han sido transferidos.", time: "Hace 3h", read: true, type: "pago" },
   { id: "np4", title: "Pedido confirmado", body: "Nuevo pedido de 80 canastillas. Confirma disponibilidad antes de 18 Sep.", time: "Ayer", read: true, type: "compra" },
+    { id: "np5", title: "Pedido preparado", body: "El pedido fue marcado como preparado y esta listo para despacho.", time: "Hace 1h", read: false, type: "compra" },
+    { id: "np6", title: "Pedido despachado", body: "El pedido fue despachado y ahora se encuentra en transito.", time: "Hace 45 min", read: false, type: "compra" },
+    { id: "np7", title: "Pedido proximo a entrega", body: "El pedido se encuentra proximo al punto de entrega.", time: "Hace 20 min", read: false, type: "compra" },
+    { id: "np8", title: "Entrega registrada", body: "La entrega fue registrada. Esperando confirmacion del comprador.", time: "Ahora", read: false, type: "compra" },
 ];
 const notifIcon: Record<string, string> = { oferta: "📦", compra: "🛒", pago: "💰", mensaje: "💬" };
 
@@ -998,3 +1006,4 @@ export default function App() {
     </div>
   );
 }
+
