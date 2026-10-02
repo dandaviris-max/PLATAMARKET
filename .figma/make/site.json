@@ -1,0 +1,10 @@
+{
+  "description": "Connects local banana farmers with buyers through a user-friendly marketplace, enhancing sales opportunities and streamlining transactions.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
