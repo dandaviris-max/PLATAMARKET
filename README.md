@@ -200,6 +200,7 @@ Versión resultante después de implementar OCI-001:
 
 
 
+```text
 OCI-001
    ↓
 Análisis de impacto
@@ -215,3 +216,4 @@ Pull Request
 develop
    ↓
 v1.1.0
+```
