@@ -188,7 +188,7 @@ Versión inicial:
 
 
 
-Versión prevista después de implementar OCI-001:
+Versión resultante después de implementar OCI-001:
 
 
 
@@ -200,39 +200,18 @@ Versión prevista después de implementar OCI-001:
 
 
 
-```text
-
 OCI-001
-
-&#x20;  ↓
-
+   ↓
 Análisis de impacto
-
-&#x20;  ↓
-
+   ↓
 feature/notificaciones-pedido
-
-&#x20;  ↓
-
+   ↓
 Implementación
-
-&#x20;  ↓
-
+   ↓
 Pruebas
-
-&#x20;  ↓
-
+   ↓
 Pull Request
-
-&#x20;  ↓
-
+   ↓
 develop
-
-&#x20;  ↓
-
-main
-
-&#x20;  ↓
-
+   ↓
 v1.1.0
-
